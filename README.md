@@ -1,6 +1,6 @@
 # gatsby-plugin-branch-web-sdk
 
-A [Gatsby](https://www.gatsbyjs.org) plugin for [Segment](https://docs.branch.io/pages/web/integrate/).
+A [Gatsby](https://www.gatsbyjs.org) plugin for the [Branch IO Web SDK](https://docs.branch.io/pages/web/integrate/).
 
 ## Usage
 

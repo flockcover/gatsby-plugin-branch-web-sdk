@@ -1,0 +1,46 @@
+version: 2
+defaults: &defaults
+  working_directory: ~/gatsby-plugin-branch-web-sdk
+jobs:
+  node_setup:
+    <<: *defaults
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+
+      - restore_cache:
+          key: node-v8-{{ checksum "package.json" }}-{{ arch }}
+
+      - run: NODE_ENV=development npm install
+
+      - save_cache:
+          key: node-v8-{{ checksum "package.json" }}-{{ arch }}
+          paths:
+            - node_modules
+
+      - persist_to_workspace:
+          root: ~/gatsby-plugin-branch-web-sdk
+          paths:
+            - node_modules
+
+  lint:
+    <<: *defaults
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+
+      - attach_workspace:
+          at: ~/gatsby-plugin-branch-web-sdk
+
+      - run: npm run lint
+
+workflows:
+  version: 2
+  gatsby-plugin-branch-web-sdk:
+    jobs:
+      - node_setup
+      - lint:
+          requires:
+            - node_setup
