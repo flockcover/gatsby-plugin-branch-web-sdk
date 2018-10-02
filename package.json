@@ -28,6 +28,6 @@
   "scripts": {
     "lint": "standard",
     "build": "babel src --out-dir .",
-    "prepublish": "npm run lint && npm run build"
+    "prepublishOnly": "npm run lint && npm run build"
   }
 }
