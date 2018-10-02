@@ -19,7 +19,7 @@ module.exports = {
   plugins: [
     // your other plugins...
     {
-      resolve: '[@flockcover/gatsby-plugin-branch-web-sdk]',
+      resolve: '@flockcover/gatsby-plugin-branch-web-sdk',
       options: {
         prodBranchKey: 'Your Live Branch Key',
         devBranchKey: 'Your Test Branch Key'
