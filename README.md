@@ -7,7 +7,7 @@ A [Gatsby](https://www.gatsbyjs.org) plugin for the [Branch IO Web SDK](https://
 ## Install
 
 ```shell
-$ npm install --save @flockcover/gatsby-plugin-branch-web-sdk]
+$ npm install --save @flockcover/gatsby-plugin-branch-web-sdk
 ```
 
 ## Usage
