@@ -24,6 +24,6 @@
   },
   "scripts": {
     "lint": "standard",
-    "prepublish": "lint"
+    "prepublish": "npm run lint"
   }
 }
