@@ -8,8 +8,8 @@
     "branch-web-sdk",
     "deep-links"
   ],
-  "version": "1.0.3",
-  "main": "gatsby-ssr.js",
+  "version": "1.0.4",
+  "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
