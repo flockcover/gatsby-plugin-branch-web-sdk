@@ -8,7 +8,7 @@
     "branch-web-sdk",
     "deep-links"
   ],
-  "version": "1.0.11",
+  "version": "1.0.12",
   "main": "index.js",
   "license": "MIT",
   "repository": {
@@ -17,7 +17,8 @@
   },
   "author": "Abraham Polishchuk <apolishc@gmail.com>",
   "peerDependencies": {
-    "react": "^15.0.0-0 || ^16.0.0-0"
+    "react": "^15.0.0-0 || ^16.0.0-0",
+    "gatsby": ">=1"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
