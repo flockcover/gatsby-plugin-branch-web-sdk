@@ -17,7 +17,8 @@
   },
   "author": "Abraham Polishchuk <apolishc@gmail.com>",
   "peerDependencies": {
-    "react": "^15.0.0-0 || ^16.0.0-0"
+    "react": "^15.0.0-0 || ^16.0.0-0",
+    "gatsby": ">=1"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
